@@ -13,9 +13,10 @@ typedef NS_ENUM(NSInteger, Encryption) {
 @property (nonatomic, copy) NSString *password;
 @property (nonatomic) BOOL isHidden;
 @property (nonatomic) NSInteger channel;
-@property (nonatomic, strong) NSDate *added;
-@property (nonatomic, strong) NSDate *lastManualJoin;
-@property (nonatomic, strong) NSDate *lastAutoJoin;
+@property (nonatomic, strong) NSDate *addedAt;
+@property (nonatomic, strong) NSDate *lastAutoJoined;
+@property (nonatomic, strong) NSDate *prevJoined;
+@property (nonatomic, strong) NSDate *lastJoined;
 @property (nonatomic) Encryption encryption;
 @property (nonatomic, retain) NSDictionary *allRecords;
 
